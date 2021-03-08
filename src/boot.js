@@ -3,7 +3,7 @@ import Axios from "axios";
 import fs from "fs";
 
 const publicSSMApiPath = "https://hub.splitscreen.me/api/v1/";
-const botPrefix = "-";
+const botPrefix = "$";
 const DiscordInit = secretDiscordToken => {
 
   const DiscordBot = new Discord.Client();

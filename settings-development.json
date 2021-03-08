@@ -9,6 +9,6 @@
   },
   "private": {
     "DISCORD_BOT_SECRET_TOKEN": "",
-    "DEVELOPMENT_CHANNELS": []
+    "DEVELOPMENT_CHANNELS": ["my-bots", "bot-testing"]
   }
 }
