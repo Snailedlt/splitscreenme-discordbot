@@ -1,3 +1,7 @@
 node_modules/
 .idea/
 .vscode/
+.replit
+.env
+settings-development.json
+package-lock.json

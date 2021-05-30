@@ -4,6 +4,15 @@ import fs from "fs";
 
 const publicSSMApiPath = "https://hub.splitscreen.me/api/v1/";
 const botPrefix = "$";
+const { Client } = require("discord.js");
+const keepAlive = require('./server.js');
+ 
+const client = new Client({
+  disableEveryone: true
+});
+ 
+keepAlive();
+client.login(process.env.TOKEN);
 const DiscordInit = secretDiscordToken => {
 
   const DiscordBot = new Discord.Client();
