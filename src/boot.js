@@ -78,7 +78,7 @@ const DiscordInit = async (secretDiscordToken) => {
     }
 
     const options = Object.fromEntries(
-      interaction.options.data.map((option) => [option.name, option.user ?? option.value]),
+      interaction.options.data.map((option) => [option.name, option.attachment ?? option.user ?? option.value]),
     );
     console.log(
       `[Slash] ${interaction.user.tag}: /${command.config.name}`,
@@ -171,7 +171,7 @@ const DiscordInit = async (secretDiscordToken) => {
         await command.run({
           client: DiscordBot,
           commands,
-          options: command.fromMessage({ args, mentionedUser }),
+          options: command.fromMessage({ args, mentionedUser, attachments: receivedMessage.attachments }),
         }),
       );
     } catch (error) {

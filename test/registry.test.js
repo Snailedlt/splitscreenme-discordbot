@@ -7,7 +7,7 @@ test('loads every command, keyed by its name', async () => {
 
   assert.deepEqual(
     [...commands.keys()].sort(),
-    ['create', 'discord', 'handler', 'help', 'hubstats', 'release'],
+    ['create', 'discord', 'handler', 'help', 'hubstats', 'lint', 'release'],
   );
 });
 

@@ -29,9 +29,14 @@ Commands are **slash commands**: type `/` in Discord to see them. They can also 
 | `/help [command]`             | `@bot help <command name>`               | `cmds`, `commands`, `halp` | Shows a list of all available bot commands          |
 | `/handler game:`              | `@bot handler [game name]`               | `h`, `script`              | Return handler for the specified game (autocompleted from the Hub) |
 | `/create engine: [user:]`     | `@bot create [engine name] <@user>`      | `c`, `make`                | Sends the handler template of a game engine         |
+| `/lint file:`                 | `@bot lint` with the `.js` attached       | `check`                    | Checks a handler: problems Nucleus would hit (by line), what each player gets (simulated), and a link that opens it in the [workbench](https://snailedlt.github.io/nucleuscoop-handler-testbench/) |
 | `/discord`                    | `@bot discord`                           | `d`, `disc`                | Return invite link to the Nucleus Coop Discord      |
 | `/hubstats`                   | `@bot hubstats`                          |                            | Return stats from the hub                           |
 | `/release [user:]`            | `@bot release <@user>`                   | `r`, `nucleus`             | Return link to the latest Nucleus Co-op release     |
+
+### Handler checks (`/lint`)
+
+`/lint` uses the `nucleus` CLI from [splitscreenme-vscode](https://github.com/Snailedlt/splitscreenme-vscode), vendored as one file in `src/vendor/nucleus.cjs`; refresh it with `npm run update:nucleus`. It lints the handler and simulates it for 2 players. The simulation runs the handler's script in an isolated sandbox with a time limit, so a handler can't reach the bot's process or files. The workbench link (`workbenchUrl` in the settings) carries the handler itself, compressed; when it would be too long, the reply links the workbench instead.
 
 ## Building 🚧
 

@@ -5,7 +5,8 @@
     "twitterUsername": "splitscreen-me",
     "facebookUsername": "splitscreen-me",
     "githubProjectUrl": "https://github.com/splitscreen-me",
-    "productAddress": "https://www.splitscreen.me/"
+    "productAddress": "https://www.splitscreen.me/",
+    "workbenchUrl": "https://snailedlt.github.io/nucleuscoop-handler-testbench/"
   },
   "private": {
     "DISCORD_BOT_SECRET_TOKEN": "",

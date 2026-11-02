@@ -7,7 +7,8 @@
   "scripts": {
     "start:dev": "node --watch ./bot.js",
     "start:prod": "node ./bot.js",
-    "test": "node --test \"test/**/*.test.js\""
+    "test": "node --test \"test/**/*.test.js\"",
+    "update:nucleus": "curl -sSfL https://raw.githubusercontent.com/Snailedlt/splitscreenme-vscode/main/plugin/skills/nucleus-handler/scripts/nucleus.js -o src/vendor/nucleus.cjs"
   },
   "keywords": [],
   "author": "Rémi MACH <r-mach>",
