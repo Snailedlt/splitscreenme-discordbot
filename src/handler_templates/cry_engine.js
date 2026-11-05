@@ -27,7 +27,6 @@ Game.MaxPlayersOneMonitor = 4;
 Game.BinariesFolder = "Bin64";
 Game.LauncherTitle = "";
 Game.SupportsPositioning = true;
-Game.ForceFinishOnPlay = true;
 Game.Hook.ForceFocus = true;
 Game.Hook.ForceFocusWindowName = "Window Name";
 Game.Hook.DInputEnabled = false;

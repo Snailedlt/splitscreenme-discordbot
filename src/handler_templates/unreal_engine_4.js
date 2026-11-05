@@ -22,7 +22,6 @@ Game.NeedsSteamEmulation = false;
 Game.UseGoldberg = true;
 Game.LauncherTitle = "";
 Game.SupportsPositioning = true;
-Game.ForceFinishOnPlay = true;
 Game.Hook.ForceFocus = true;
 Game.Hook.ForceFocusWindowName = "Window Name";
 Game.Hook.DInputEnabled = false;
